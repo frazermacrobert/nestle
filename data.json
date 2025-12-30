@@ -1,0 +1,405 @@
+{
+  "traits": [
+    {
+      "id": "digital_learning",
+      "name": "Digital Learning Expertise",
+      "icon": "💻",
+      "description": "Experience with learning platforms, e-learning, and digital transformation"
+    },
+    {
+      "id": "compliance",
+      "name": "Compliance & Reporting",
+      "icon": "📊",
+      "description": "Managing mandatory training and data-driven insights"
+    },
+    {
+      "id": "stakeholder",
+      "name": "Stakeholder Collaboration",
+      "icon": "🤝",
+      "description": "Working across functions, markets, and global teams"
+    },
+    {
+      "id": "project_mgmt",
+      "name": "Project Management",
+      "icon": "📋",
+      "description": "Juggling priorities, self-motivated execution"
+    },
+    {
+      "id": "learning_design",
+      "name": "Learning Design",
+      "icon": "🎨",
+      "description": "Instructional design frameworks and learning theory"
+    },
+    {
+      "id": "comms_strategy",
+      "name": "Communication Strategy",
+      "icon": "📢",
+      "description": "Content development and L&D communications"
+    }
+  ],
+  "intro_questions": [
+    {
+      "id": "q_about_you",
+      "text": "Tell me about yourself",
+      "responses": [
+        {
+          "id": "r_about_1",
+          "text": "I've spent over a decade in senior-level roles across communications, marketing, and project management. Most recently at ScarlettAbbott, I've been helping clients like Pernod Ricard, Coca Cola, and British Gas improve their employee experience through behavior change programs and learning solutions.",
+          "edge_color": "cyan",
+          "trait": "stakeholder",
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_about_1a",
+              "prompt": "Tell me more: ScarlettAbbott work",
+              "text": "At ScarlettAbbott, I take a holistic view of employee experience, using client and industry data to diagnose root problems. I've led AI adoption programs, built gamified learning experiences, and designed communication strategies that cut through the noise. My clients range from energy companies to FMCG giants—each needing tailored, evidence-based solutions.",
+              "edge_color": "cyan",
+              "trait": "digital_learning",
+              "time_cost": 3
+            },
+            {
+              "id": "f_about_1b",
+              "prompt": "Tell me more: Background",
+              "text": "Before ScarlettAbbott, I worked at We Are Brass Tacks embedding safety frameworks for Fortune 500 companies using behavioral science. I also spent time at 17 Triggers in Cambodia, running HCD workshops for clients like UNICEF and USAID. That's where I really fell in love with human-centered design as a tool for behavior change.",
+              "edge_color": "green",
+              "trait": null,
+              "time_cost": 3
+            }
+          ]
+        },
+        {
+          "id": "r_about_2",
+          "text": "I'm an Employee Experience Specialist with a passion for behavior change. I completed my MBA in 2025 and a NanoMBA in Behavioral Science in 2024. I also wrote a book called 'Fan Centric Design' about applying design thinking to fan engagement—which turned out to be surprisingly relevant to employee engagement too.",
+          "edge_color": "green",
+          "trait": null,
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_about_2a",
+              "prompt": "Tell me more: Behavioral science",
+              "text": "Behavioral science is at the core of everything I do. I use frameworks like the Elephant-Rider-Path model to design interventions that stick. Whether it's a compliance training program or an internal comms campaign, I'm always thinking about cognitive biases, motivation, and habit formation. My MBA thesis explored dark patterns in employee engagement, which was... eye-opening.",
+              "edge_color": "cyan",
+              "trait": "learning_design",
+              "time_cost": 3
+            },
+            {
+              "id": "f_about_2b",
+              "prompt": "Tell me more: The book",
+              "text": "Fan Centric Design applies service design principles to fan experiences. I wrote it after years in the entertainment industry, but the parallels to employee experience are everywhere—understanding needs, creating emotional connections, designing for moments that matter. It's available on Amazon if you're curious!",
+              "edge_color": "yellow",
+              "trait": null,
+              "time_cost": 3
+            }
+          ]
+        },
+        {
+          "id": "r_about_3",
+          "text": "I'm a bit of a generalist, which I know can sound wishy-washy, but hear me out. I've managed marketing teams, built brands from scratch, designed learning experiences, written code, facilitated workshops, and even managed a nightclub empire. That breadth means I can speak fluently across disciplines and build solutions end-to-end.",
+          "edge_color": "green",
+          "trait": null,
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_about_3a",
+              "prompt": "Tell me more: Nightclub empire?",
+              "text": "Ha, yes. I ran Neverland—a nightlife business across Glasgow and Aberdeen with 25-30 staff. I learned branding, HR, finance, event management, and how to communicate with everyone from bartenders to accountants. It was chaotic and brilliant. I eventually sold it to focus on L&D, but those years taught me how to manage complexity and keep teams aligned.",
+              "edge_color": "yellow",
+              "trait": null,
+              "time_cost": 3
+            },
+            {
+              "id": "f_about_3b",
+              "prompt": "Tell me more: End-to-end solutions",
+              "text": "I don't just strategize—I execute. I can design a learning program, build the digital assets, write the content, code the experience, and report on the outcomes. That's rare in L&D. Most people specialize, but I've deliberately stayed broad so I can own entire projects from concept to delivery.",
+              "edge_color": "cyan",
+              "trait": "project_mgmt",
+              "time_cost": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q_why_apply",
+      "text": "What made you apply for this role?",
+      "responses": [
+        {
+          "id": "r_why_1",
+          "text": "Nestlé's focus on digital transformation in learning really resonates with me. The GROW platform launch is exactly the kind of project I thrive on—rolling out new tech, supporting adoption, and making sure it actually delivers value. Plus, compliance training is criminally under-designed. I'd love to change that.",
+          "edge_color": "cyan",
+          "trait": "digital_learning",
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_why_1a",
+              "prompt": "Tell me more: GROW platform",
+              "text": "Learning platforms are only as good as the experience they create. I've worked with LMS implementations before, and the common failure point is adoption—people don't use them because they're clunky or irrelevant. My approach would be to obsess over user experience, create compelling content, and build a communication strategy that makes people actually want to engage.",
+              "edge_color": "cyan",
+              "trait": "comms_strategy",
+              "time_cost": 3
+            },
+            {
+              "id": "f_why_1b",
+              "prompt": "Tell me more: Compliance training",
+              "text": "Compliance training is usually a checkbox exercise. People click through slides, retain nothing, and move on. But it doesn't have to be that way. I've built compliance programs that use storytelling, scenario-based learning, and gamification to make the content stick. It's still compliant, but it's actually effective.",
+              "edge_color": "cyan",
+              "trait": "compliance",
+              "time_cost": 3
+            }
+          ]
+        },
+        {
+          "id": "r_why_2",
+          "text": "I've been following Nestlé's commitment to diversity and inclusion, and it aligns with my own values. I've worked across cultures—Cambodia, France, Scotland—and I've seen firsthand how diverse perspectives drive better outcomes. I want to work somewhere that takes that seriously.",
+          "edge_color": "green",
+          "trait": null,
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_why_2a",
+              "prompt": "Tell me more: Working across cultures",
+              "text": "When I was at 17 Triggers in Cambodia, I facilitated workshops with UNICEF and GIZ on topics like child labor and gender equity. You can't just import Western frameworks—you have to deeply understand local context, power dynamics, and cultural norms. That experience made me a much better designer and communicator.",
+              "edge_color": "green",
+              "trait": null,
+              "time_cost": 3
+            }
+          ]
+        },
+        {
+          "id": "r_why_3",
+          "text": "Honestly? I want to work on something that matters. Learning and development has a direct impact on people's growth, confidence, and careers. I've spent years in marketing and comms, which is fun, but L&D feels more meaningful. And Nestlé's scale means the impact is huge.",
+          "edge_color": "green",
+          "trait": null,
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_why_3a",
+              "prompt": "Tell me more: Meaningful work",
+              "text": "I've done a lot of commercial work—selling products, driving revenue, optimizing funnels. It's fine, but it doesn't light me up the way learning does. When I see someone have an 'aha' moment in a workshop, or when a comms campaign actually changes behavior, that's the good stuff. That's why I'm here.",
+              "edge_color": "green",
+              "trait": null,
+              "time_cost": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q_what_unique",
+      "text": "What makes you unique for this role?",
+      "responses": [
+        {
+          "id": "r_unique_1",
+          "text": "I'm technical. I can code, design, and build digital experiences from scratch. Most L&D specialists rely on vendors or IT teams, but I can prototype learning tools, analyze data in Python, and even build game-like simulations. That makes me fast and self-sufficient.",
+          "edge_color": "cyan",
+          "trait": "digital_learning",
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_unique_1a",
+              "prompt": "Tell me more: Technical skills",
+              "text": "I've built websites, designed learning games, created data dashboards, and automated reporting workflows. I'm comfortable in Figma, Webflow, the Adobe suite, and I can write JavaScript and Python when needed. That technical fluency means I can move fast and don't need hand-holding.",
+              "edge_color": "cyan",
+              "trait": "project_mgmt",
+              "time_cost": 3
+            }
+          ]
+        },
+        {
+          "id": "r_unique_2",
+          "text": "I understand stakeholder management at scale. I've worked with global teams, regional partners, and local stakeholders across multiple industries. I know how to adapt my communication style, build consensus, and deliver on competing priorities without dropping the ball.",
+          "edge_color": "cyan",
+          "trait": "stakeholder",
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_unique_2a",
+              "prompt": "Tell me more: Stakeholder examples",
+              "text": "At ScarlettAbbott, I've managed projects with C-suite sponsors, factory floor workers, and everyone in between. At 17 Triggers, I coordinated with UN agencies, government ministries, and grassroots NGOs. Each group has different needs, incentives, and communication preferences. My job is to navigate that complexity.",
+              "edge_color": "cyan",
+              "trait": "comms_strategy",
+              "time_cost": 3
+            }
+          ]
+        },
+        {
+          "id": "r_unique_3",
+          "text": "I'm a systems thinker. I don't just design a training module—I think about the entire ecosystem. How does this fit into the employee journey? What barriers exist? What incentives are in play? That holistic view means my solutions are more likely to work in the real world.",
+          "edge_color": "cyan",
+          "trait": "learning_design",
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_unique_3a",
+              "prompt": "Tell me more: Systems thinking",
+              "text": "I use frameworks like the Elephant-Rider-Path model and 70-20-10 to map out interventions. I also think about Kotter's change management principles, Fogg's behavior model, and even dark logic considerations—what unintended consequences might this create? That depth means fewer surprises down the line.",
+              "edge_color": "cyan",
+              "trait": "learning_design",
+              "time_cost": 3
+            }
+          ]
+        },
+        {
+          "id": "r_unique_4",
+          "text": "I'm scrappy. I've built businesses, managed teams, and delivered projects with limited budgets and tight deadlines. I don't wait for perfect conditions—I ship, iterate, and improve. That bias toward action is invaluable in fast-moving environments.",
+          "edge_color": "green",
+          "trait": null,
+          "time_cost": 0,
+          "follow_ups": [
+            {
+              "id": "f_unique_4a",
+              "prompt": "Tell me more: Scrappiness",
+              "text": "When I ran What's On Phnom Penh, we had no budget for designers or developers. So I taught myself. When I needed to scale Neverland, I learned HR and finance. I don't see constraints as blockers—I see them as design challenges. That mindset is how I've delivered so much with so little.",
+              "edge_color": "green",
+              "trait": null,
+              "time_cost": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "debrief_questions": [
+    {
+      "id": "dq_1",
+      "text": "What platform experience does the candidate have that's relevant to managing GROW?",
+      "requires": ["f_about_1a", "f_why_1a"],
+      "answers": [
+        "They've only worked with basic LMS systems",
+        "They've implemented learning platforms with a focus on user experience and adoption strategies",
+        "They mentioned using Moodle at a previous company",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "dq_2",
+      "text": "How does the candidate approach compliance training differently?",
+      "requires": ["f_why_1b"],
+      "answers": [
+        "They see it as a necessary checkbox exercise",
+        "They use storytelling, scenario-based learning, and gamification to make it effective",
+        "They prefer outsourcing compliance to vendors",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "dq_3",
+      "text": "What frameworks does the candidate use for learning design?",
+      "requires": ["f_about_2a", "f_unique_3a"],
+      "answers": [
+        "They mentioned ADDIE and Kirkpatrick",
+        "They use Elephant-Rider-Path, 70-20-10, and Fogg's behavior model",
+        "They prefer agile methodologies",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "dq_4",
+      "text": "What evidence is there of the candidate's stakeholder management skills?",
+      "requires": ["f_unique_2a", "r_about_1"],
+      "answers": [
+        "They've managed small local teams",
+        "They've worked with C-suite sponsors, factory workers, UN agencies, and government ministries across multiple industries",
+        "They prefer to avoid stakeholder politics",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "dq_5",
+      "text": "What technical skills does the candidate bring to the role?",
+      "requires": ["f_unique_1a", "r_unique_1"],
+      "answers": [
+        "Basic Microsoft Office proficiency",
+        "They can code, design, build digital experiences, analyze data in Python, and create prototypes independently",
+        "They're comfortable with PowerPoint presentations",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "dq_6",
+      "text": "How does the candidate demonstrate their understanding of communication strategy?",
+      "requires": ["f_why_1a", "f_unique_2a"],
+      "answers": [
+        "They've written a few newsletters",
+        "They've designed adoption campaigns for learning platforms and adapted communication styles across diverse stakeholder groups",
+        "They prefer email over other channels",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "dq_7",
+      "text": "What's an example of the candidate's project management capability?",
+      "requires": ["f_about_3b", "f_unique_1a"],
+      "answers": [
+        "They've coordinated a few team meetings",
+        "They own entire projects end-to-end from concept to delivery, managing multiple priorities independently",
+        "They prefer to work on single-focus projects",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    }
+  ],
+  "extra_debrief_pool": [
+    {
+      "text": "What did the candidate say about their educational background?",
+      "requires": ["r_about_2"],
+      "answers": [
+        "They have a degree in education",
+        "They completed an MBA in 2025 and a NanoMBA in Behavioral Science in 2024",
+        "They're self-taught",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "What book did the candidate write?",
+      "requires": ["f_about_2b"],
+      "answers": [
+        "Learning Design for Dummies",
+        "Fan Centric Design, applying service design to fan experiences",
+        "The Art of Compliance Training",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "What previous business did the candidate run?",
+      "requires": ["f_about_3a"],
+      "answers": [
+        "A consultancy firm",
+        "Neverland, a nightlife business with 25-30 staff across Glasgow and Aberdeen",
+        "A learning design agency",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "Where did the candidate work with UN agencies?",
+      "requires": ["f_why_2a"],
+      "answers": [
+        "Switzerland",
+        "Cambodia, working with UNICEF and GIZ",
+        "New York",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    },
+    {
+      "text": "What's the candidate's view on meaningful work?",
+      "requires": ["f_why_3a"],
+      "answers": [
+        "They're motivated primarily by salary",
+        "They find learning work meaningful because it creates 'aha' moments and changes behavior",
+        "They haven't thought about it much",
+        "We didn't discuss that"
+      ],
+      "correct": 1
+    }
+  ]
+}
