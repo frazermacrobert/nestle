@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Simulation: L&D Specialist Role | Frazer MacRobert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Screen -->
+    <div id="landing-screen" class="screen active">
+        <div class="container">
+            <div class="logo-area">
+                <h1>Interview Simulation</h1>
+                <h2>Learning & Development Specialist</h2>
+            </div>
+            <p class="tagline">You have limited time to learn as much as you can.<br>What will you discover?</p>
+            <button id="start-btn" class="primary-btn">Begin Interview</button>
+            <p class="credit">Created by Frazer MacRobert | <a href="https://www.frazermacrobert.com" target="_blank">www.frazermacrobert.com</a></p>
+        </div>
+    </div>
+
+    <!-- Context Screen -->
+    <div id="context-screen" class="screen">
+        <div class="container">
+            <h2>Your Mission</h2>
+            <p>You're interviewing a candidate for the Learning & Development Specialist role at Nestlé.</p>
+            <p>Time is limited, and there's more to learn than you can possibly cover. Ask questions, explore their background, and uncover what matters most.</p>
+            <p>Watch for the pulsing edges around responses—they signal different types of information:</p>
+            <ul class="legend">
+                <li><span class="indicator cyan"></span> Core competency aligned with the role</li>
+                <li><span class="indicator green"></span> Transferable skill or related experience</li>
+                <li><span class="indicator yellow"></span> Personal interests or tangential topics</li>
+            </ul>
+            <p><strong>In Round Two, you'll debrief with a board member</strong>—so choose wisely.</p>
+            <button id="start-round1-btn" class="primary-btn">Start Round One</button>
+        </div>
+    </div>
+
+    <!-- Round One: Interview -->
+    <div id="round1-screen" class="screen">
+        <div class="game-header">
+            <div class="timer-container">
+                <span class="timer-label">Time Remaining:</span>
+                <span id="timer" class="timer">20:00</span>
+            </div>
+            <div id="traits-container" class="traits-container"></div>
+        </div>
+        
+        <div class="interview-container">
+            <div id="conversation-area" class="conversation-area"></div>
+            <div id="options-area" class="options-area"></div>
+        </div>
+    </div>
+
+    <!-- Round Two: Debrief -->
+    <div id="round2-screen" class="screen">
+        <div class="container">
+            <h2>Board Member Debrief</h2>
+            <p class="debrief-intro">Let's discuss what you learned about the candidate. Answer these questions based on your interview.</p>
+            <div id="debrief-questions" class="debrief-questions"></div>
+            <div id="debrief-score" class="debrief-score hidden"></div>
+            <button id="finish-btn" class="primary-btn hidden">View Results</button>
+        </div>
+    </div>
+
+    <!-- Final Screen -->
+    <div id="final-screen" class="screen">
+        <div class="container">
+            <h2>Interview Complete</h2>
+            <div id="final-metrics" class="final-metrics"></div>
+            <div class="final-reflection">
+                <h3>About This Experience</h3>
+                <p>This interactive simulation demonstrates several L&D gamification principles:</p>
+                <ul>
+                    <li><strong>Time pressure</strong> to simulate real-world constraints</li>
+                    <li><strong>Visual feedback</strong> (pulsing edges, trait discovery) for immediate reinforcement</li>
+                    <li><strong>Branching narratives</strong> to create multiple discovery paths</li>
+                    <li><strong>Reflective assessment</strong> (Round Two) to evaluate decision-making</li>
+                    <li><strong>Hidden scoring</strong> to reduce performance anxiety and encourage exploration</li>
+                </ul>
+                <p>These same principles can transform compliance training, onboarding programs, and leadership development.</p>
+            </div>
+            <div class="cta-area">
+                <p>Want to discuss how we could work together?</p>
+                <a href="https://www.linkedin.com/in/frazermacrobert/" target="_blank" class="primary-btn">Connect on LinkedIn</a>
+                <button id="replay-btn" class="secondary-btn">Replay Experience</button>
+                <a href="https://www.frazermacrobert.com" target="_blank" class="secondary-btn">View Full CV</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
