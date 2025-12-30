@@ -15,7 +15,17 @@ let gameState = {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadGameData();
     setupEventListeners();
+    checkForBackground();
 });
+
+function checkForBackground() {
+    // Check if bg.png exists and add class to body
+    const img = new Image();
+    img.onload = () => {
+        document.body.classList.add('with-background');
+    };
+    img.src = 'bg.png';
+}
 
 async function loadGameData() {
     try {
@@ -37,6 +47,7 @@ function initializeQuestions() {
 function setupEventListeners() {
     document.getElementById('start-btn').addEventListener('click', showContextScreen);
     document.getElementById('start-round1-btn').addEventListener('click', startRoundOne);
+    document.getElementById('modal-ok-btn').addEventListener('click', hideModalAndStartRound2);
     document.getElementById('replay-btn').addEventListener('click', resetGame);
 }
 
@@ -81,6 +92,7 @@ function startTimer() {
         timerEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
         
         // Visual warnings
+        timerEl.classList.remove('warning', 'critical');
         if (gameState.timeRemaining <= 60) {
             timerEl.classList.add('critical');
         } else if (gameState.timeRemaining <= 180) {
@@ -102,7 +114,7 @@ function displayQuestionOptions() {
         
         const btn = document.createElement('button');
         btn.className = `option-btn ${!hasResponses ? 'disabled' : ''}`;
-        btn.textContent = question.text;
+        btn.innerHTML = `<span>${question.text}</span>`;
         btn.disabled = !hasResponses;
         
         if (hasResponses) {
@@ -144,18 +156,32 @@ function selectQuestion(question) {
 function displayResponse(response) {
     const conversationArea = document.getElementById('conversation-area');
     
-    // Clear previous and show new response
+    // Clear and rebuild
     conversationArea.innerHTML = '';
+    
+    const container = document.createElement('div');
+    container.className = 'avatar-container';
+    
+    const avatar = document.createElement('div');
+    avatar.className = 'avatar candidate';
+    avatar.innerHTML = '👤';
     
     const box = document.createElement('div');
     box.className = `response-box ${response.edge_color}`;
+    
+    const speakerName = document.createElement('div');
+    speakerName.className = 'speaker-name';
+    speakerName.textContent = 'Candidate';
     
     const text = document.createElement('p');
     text.className = 'response-text';
     text.textContent = response.text;
     
+    box.appendChild(speakerName);
     box.appendChild(text);
-    conversationArea.appendChild(box);
+    container.appendChild(avatar);
+    container.appendChild(box);
+    conversationArea.appendChild(container);
     
     // If trait discovered, make it pulse intensely
     if (response.trait && !gameState.discoveredTraits.has(response.trait)) {
@@ -177,7 +203,7 @@ function displayFollowUpOptions(followUps) {
     followUps.forEach(followUp => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
-        btn.textContent = `${followUp.prompt} (-${followUp.time_cost} min)`;
+        btn.innerHTML = `<span>${followUp.prompt} (-${followUp.time_cost} min)</span>`;
         btn.addEventListener('click', () => selectFollowUp(followUp));
         optionsArea.appendChild(btn);
     });
@@ -185,7 +211,7 @@ function displayFollowUpOptions(followUps) {
     // Add "Change topic" option
     const changeBtn = document.createElement('button');
     changeBtn.className = 'option-btn';
-    changeBtn.textContent = 'Change topic (-1 min)';
+    changeBtn.innerHTML = '<span>Change topic (-1 min)</span>';
     changeBtn.addEventListener('click', () => {
         gameState.timeRemaining -= 60;
         displayQuestionOptions();
@@ -224,6 +250,17 @@ function discoverTrait(traitId) {
 
 function endRoundOne() {
     clearInterval(gameState.timerInterval);
+    showTimesUpModal();
+}
+
+function showTimesUpModal() {
+    const modal = document.getElementById('timesup-modal');
+    modal.classList.remove('hidden');
+}
+
+function hideModalAndStartRound2() {
+    const modal = document.getElementById('timesup-modal');
+    modal.classList.add('hidden');
     startRoundTwo();
 }
 
@@ -315,11 +352,11 @@ function checkDebriefComplete() {
     
     if (allAnswered) {
         const scoreEl = document.getElementById('debrief-score');
-        scoreEl.textContent = `Synergy Score: ${gameState.synergyScore} points`;
+        const scoreDisplay = document.getElementById('score-display');
+        scoreDisplay.textContent = gameState.synergyScore;
         scoreEl.classList.remove('hidden');
         
         const finishBtn = document.getElementById('finish-btn');
-        finishBtn.classList.remove('hidden');
         finishBtn.addEventListener('click', showFinalScreen);
     }
 }
